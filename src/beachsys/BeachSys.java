@@ -19,9 +19,7 @@ public class BeachSys {
         usuario1.setNome("jose");
         
         Usuario usuario2 = new Usuario();
-        usuario2.setCpf("");
-        usuario2.setEmail("");
-        usuario2.setNome("");
+        
         
         Usuario usuario3 = new Usuario();
         usuario3.setCpf("254.548.587.22");
@@ -40,23 +38,27 @@ public class BeachSys {
         
         
         Compartimento espaco_1_02 = new Compartimento();
-        espaco_1_01.setTamanho("100x100");
-        espaco_1_01.setNumeroCompartimento("2");
-        espaco_1_01.setUsuario(usuario2);
+        espaco_1_02.setTamanho("100x100");
+        espaco_1_02.setNumeroCompartimento("2");
+        
         
         Compartimento espaco_1_03 = new Compartimento();
-        espaco_1_01.setTamanho("50x100");
-        espaco_1_01.setNumeroCompartimento("3");
-        espaco_1_01.setUsuario(usuario3);
+        espaco_1_03.setTamanho("550x600");
+        espaco_1_03.setNumeroCompartimento("3");
+        espaco_1_03.setUsuario(usuario3);
         
         Compartimento espaco_1_04 = new Compartimento();
-        espaco_1_01.setTamanho("50x150");
-        espaco_1_01.setNumeroCompartimento("4");
-        espaco_1_01.setUsuario(usuario4);
+        espaco_1_04.setTamanho("50x150");
+        espaco_1_04.setNumeroCompartimento("4");
+        espaco_1_04.setUsuario(usuario4);
         
         Compartimento espaco_1_05 = new Compartimento();
+        espaco_1_05.setTamanho("150x150");
+        espaco_1_05.setNumeroCompartimento("5");
         
         Compartimento espaco_1_06 = new Compartimento();
+        espaco_1_06.setTamanho("250x150");
+        espaco_1_06.setNumeroCompartimento("6");
         
         ArrayList<Compartimento> compartimentos = new ArrayList<>();
         compartimentos.add(espaco_1_01);

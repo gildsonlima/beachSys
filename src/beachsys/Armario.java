@@ -17,7 +17,8 @@ public class Armario {
     private String pontoY;
     private int quantidadeCompartimento;
     private ArrayList<Compartimento>Compartimentos;
-    int cont=0;
+    
+    
     public Armario(){
         this.Compartimentos = new ArrayList<>();
     }
@@ -70,12 +71,17 @@ public class Armario {
     }
     
     public int calcularDisponiveis(){
+        int cont=0;
         
-        cont++;
+        for (int i = 0; i < this.Compartimentos.size(); i++) {
+            if(this.getCompartimentos().get(i).isEstado()==true){
+                cont++;
+                System.out.println(cont);
+            }
+        }
         
         return cont;
     }
-    
     
     
     

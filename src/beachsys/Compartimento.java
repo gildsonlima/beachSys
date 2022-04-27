@@ -31,11 +31,12 @@ public class Compartimento {
     }
 
     public void setEstado() {
-       
-        if (!this.usuario.getNome().equals("")){
+        if (this.usuario != null){
             this.estado = true;
-            System.out.println("saida do setEstado usado "+this.estado);
-            }
+            System.out.println("saida do setEstado ocupado "+this.estado);
+            }else{
+                System.out.println("saida do setEstado vazio "+this.estado);
+        }
     }
     
     public String getTamanho() {
