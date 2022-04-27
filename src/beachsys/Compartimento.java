@@ -8,10 +8,10 @@ package beachsys;
  *
  * @author GCL
  */
-public class Espaco {
+public class Compartimento {
     
     private String tamanho;
-    private String numeroEspaco;
+    private String numeroCompartimento;
     private boolean estado = false;
     private Usuario usuario;
     
@@ -46,12 +46,12 @@ public class Espaco {
         this.tamanho = tamanho;
     }
 
-    public String getNumeroEspaco() {
-        return numeroEspaco;
+    public String getNumeroCompartimento() {
+        return numeroCompartimento;
     }
 
-    public void setNumeroEspaco(String numeroEspaco) {
-        this.numeroEspaco = numeroEspaco;
+    public void setNumeroCompartimento(String numeroCompartimento) {
+        this.numeroCompartimento = numeroCompartimento;
     }
     
    

@@ -15,11 +15,11 @@ public class Armario {
     private String nome;
     private String pontoX;
     private String pontoY;
-    private int quantidadeEspaco;
-    private ArrayList<Espaco>espacos;
+    private int quantidadeCompartimento;
+    private ArrayList<Compartimento>Compartimentos;
     int cont=0;
     public Armario(){
-        this.espacos = new ArrayList<>();
+        this.Compartimentos = new ArrayList<>();
     }
 
     public String getNome() {
@@ -46,24 +46,24 @@ public class Armario {
         this.pontoY = pontoY;
     }
 
-    public ArrayList<Espaco> getEspacos() {
-        return espacos;
+    public ArrayList<Compartimento> getCompartimentos() {
+        return Compartimentos;
     }
 
-    public void setEspacos(ArrayList<Espaco> espacos) {
-        this.espacos = espacos;
+    public void setCompartimentos(ArrayList<Compartimento> Compartimentos) {
+        this.Compartimentos = Compartimentos;
     }
 
-    public int getQuantidadeEspaco() {
-        this.setQuantidadeEspaco();
-        return quantidadeEspaco;
+    public int getQuantidadeCompartimento() {
+        this.setQuantidadeCompartimento();
+        return quantidadeCompartimento;
     }
 
-    public void setQuantidadeEspaco() {
-        this.quantidadeEspaco = this.espacos.size();
+    public void setQuantidadeCompartimento() {
+        this.quantidadeCompartimento = this.Compartimentos.size();
     }
     
-    public int getEspacosDisponiveis(){
+    public int getCompartimentoDisponiveis(){
         
         return this.calcularDisponiveis();
         
