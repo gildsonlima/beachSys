@@ -11,7 +11,7 @@ package beachsys;
 public class Compartimento {
     
     private String tamanho;
-    private String numeroCompartimento;
+    private int numeroCompartimento;
     private boolean estado = false;
     private Usuario usuario;
     
@@ -47,12 +47,14 @@ public class Compartimento {
         this.tamanho = tamanho;
     }
 
-    public String getNumeroCompartimento() {
+    public int getNumeroCompartimento() {
         return numeroCompartimento;
     }
 
-    public void setNumeroCompartimento(String numeroCompartimento) {
+    public void setNumeroCompartimento(int numeroCompartimento) {
+        
         this.numeroCompartimento = numeroCompartimento;
+        
     }
     
    

@@ -54,6 +54,10 @@ public class Armario {
     public void setCompartimentos(ArrayList<Compartimento> Compartimentos) {
         this.Compartimentos = Compartimentos;
     }
+    
+    public void setCompartimento(Compartimento compartimento) {
+        this.Compartimentos.add(compartimento);
+    }
 
     public int getQuantidadeCompartimento() {
         this.setQuantidadeCompartimento();
@@ -74,15 +78,12 @@ public class Armario {
         int cont=0;
         
         for (int i = 0; i < this.Compartimentos.size(); i++) {
-            if(this.getCompartimentos().get(i).isEstado()==true){
+            if(this.getCompartimentos().get(i).isEstado()==false){
                 cont++;
-                System.out.println(cont);
             }
         }
         
         return cont;
     }
-    
-    
-    
+     
 }
