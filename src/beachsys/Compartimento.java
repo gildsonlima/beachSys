@@ -15,7 +15,10 @@ public class Compartimento {
     private boolean estado = false;
     private Usuario usuario;
     
-    
+     public Compartimento(){
+        this.estado = false;
+    }
+     
     public Usuario getUsuario() {
         return usuario;
     }
